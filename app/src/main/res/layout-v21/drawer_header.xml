@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <Button
+        android:id="@+id/drawer_header_action_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_header" />
+
+    <ImageView
+        android:id="@+id/drawer_header_np_nude_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_aihua_logo_round"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drawer_header_np_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/drawer_header_np_nude_view"
+        android:layout_alignBottom="@id/drawer_header_np_nude_view"
+        android:layout_toEndOf="@id/drawer_header_np_nude_view"
+        android:layout_toRightOf="@id/drawer_header_np_nude_view"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/drawer_header_font_color"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/drawer_header_service_view"
+        app:layout_constraintStart_toStartOf="@+id/drawer_header_service_view"
+        app:layout_constraintTop_toTopOf="@+id/drawer_header_np_nude_view" />
+
+    <TextView
+        android:id="@+id/drawer_header_service_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawer_header_np_text_view"
+        android:layout_alignStart="@id/drawer_header_np_text_view"
+        android:layout_alignLeft="@id/drawer_header_np_text_view"
+        android:text="@string/onlinevideo"
+        android:textColor="@color/drawer_header_font_color"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/drawer_header_np_nude_view"
+        app:layout_constraintStart_toEndOf="@+id/drawer_header_np_nude_view"
+        app:layout_constraintTop_toBottomOf="@+id/drawer_header_np_text_view" />
+
+</android.support.constraint.ConstraintLayout>

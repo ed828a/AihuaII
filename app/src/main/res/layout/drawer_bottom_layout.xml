@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_shortcut"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.2" />
+
+    <ImageButton
+        android:id="@+id/settingsNavigation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/windowBackground"
+        android:src="?attr/ic_settings"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.8" />
+
+    <ImageButton
+        android:id="@+id/settingsAddTabNavigation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/windowBackground"
+        android:src="?attr/ic_add_tabs"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.8" />
+
+    <ImageButton
+        android:id="@+id/historyTabNavigation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/windowBackground"
+        android:clickable="true"
+        android:src="?attr/ic_history"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.2" />
+
+</LinearLayout>
